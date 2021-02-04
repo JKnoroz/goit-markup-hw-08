@@ -1,0 +1,32 @@
+.subform {
+  display: inline-flex;
+}
+
+.subform input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: rgba(33, 150, 243, 0);
+  padding: 15px;
+  margin-right: 12px;
+  color: $white-color;
+}
+
+.subform button {
+  border-color: transparent;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-send {
+  margin-left: 10px;
+}
+
+.icon-send svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}

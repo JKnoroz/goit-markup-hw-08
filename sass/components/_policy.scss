@@ -1,0 +1,60 @@
+.policy {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.policy-text,
+.policy-treaty {
+  font-size: $small-font-size;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.policy-treaty {
+  color: $accent-color;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  margin-left: 0, 03em;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.policy-text {
+  position: relative;
+  padding-left: 23px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: $standart-font-size;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 3px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+    @include transit(background-color);
+    @include transit(border-color);
+  }
+}
+
+.checkbox:checked + .policy-text::before {
+  background-color: $accent-color;
+  background-image: url(../images/icon-check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border-color: $accent-color;
+}
+
+.checkbox:focus + .policy-text::before {
+  border-color: $accent-color;
+}

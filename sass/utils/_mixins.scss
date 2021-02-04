@@ -1,0 +1,3 @@
+@mixin transit($type) {
+  transition: $type 250ms $transit;
+} ;

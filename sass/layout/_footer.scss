@@ -1,0 +1,45 @@
+footer {
+  background-color: #2f303a;
+  padding: 60px 0px;
+}
+
+.bottom {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+address p {
+  font-style: normal;
+  color: $white-color;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.bottom-contacts a {
+  color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  margin-top: 9px;
+}
+
+.footer-contacts {
+  font-size: $small-font-size;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.subscribe p,
+.sendmail b {
+  @extend %text;
+  font-family: $primary-font-family;
+  font-style: normal;
+  font-weight: $bold-font-weight;
+  text-transform: uppercase;
+  color: $white-color;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.footer-socials {
+  display: inline-flex;
+}
