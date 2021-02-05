@@ -1,0 +1,34 @@
+.team {
+  background-color: #f5f4fa;
+  text-align: center;
+
+  & .team-member:not(:last-child) {
+    margin-right: $project-card-gap;
+  }
+
+  & .team-member {
+    background-color: $white-color;
+    box-shadow: $card-box-shadow;
+    border-radius: 0px 0px 4px 4px;
+  }
+}
+
+.card-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  h3 {
+    font-size: $standart-font-size;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: $secondary-text-color;
+    margin-bottom: $standart-font-size;
+    margin-top: 0;
+  }
+}

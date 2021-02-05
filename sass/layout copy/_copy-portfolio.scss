@@ -1,0 +1,14 @@
+.portfolio h1 {
+  display: none;
+}
+
+.projects {
+  margin-left: calc((-1) * #{$project-card-gap});
+  margin-top: calc((-1) * #{$project-card-gap});
+}
+
+.projects > .project {
+  flex-basis: calc(100% / 3-#{$project-card-gap});
+  margin-left: $project-card-gap;
+  margin-top: $project-card-gap;
+}

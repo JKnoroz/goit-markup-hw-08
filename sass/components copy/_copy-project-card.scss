@@ -1,0 +1,84 @@
+.projects a {
+  display: block;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &:hover .about,
+  &:hover .project-photo::before,
+  &:focus .about,
+  &:focus .project-photo::before {
+    transform: translateY(-100%);
+  }
+}
+
+.project-description {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+
+.project-photo {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    bottom: -100%;
+
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+
+    @include transit(transform);
+  }
+}
+
+.about {
+  position: absolute;
+  bottom: -100%;
+  width: 100%;
+  height: 100%;
+
+  @include transit(transform);
+
+  & p {
+    font-style: normal;
+    font-weight: $normal-font-weight;
+    font-size: $large-font-size;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    padding: 62px 24px 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: $white-color;
+  }
+}
+
+.projects img {
+  display: block;
+  margin-bottom: -1px;
+}
+
+.project-name {
+  font-weight: $bold-font-weight;
+  font-size: $large-font-size;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  text-align: left;
+  color: $primary-text-color;
+  margin-bottom: 4px;
+  margin-top: 0px;
+}
+
+.project-category {
+  font-size: $standart-font-size;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
