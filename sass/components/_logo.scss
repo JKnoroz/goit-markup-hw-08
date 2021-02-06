@@ -1,9 +1,13 @@
 .logo {
   font-family: $secondary-font-family, sans-serif;
   font-weight: $bold-font-weight;
-  font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
+  font-size: 24px;
+  @media screen and (min-width: $desktop-width) {
+    font-size: 26px;
+  }
 
   span {
     color: $accent-color;
@@ -11,7 +15,11 @@
 
   header & {
     color: $logoblack-color;
-    margin-right: 93px;
+
+    margin-right: 88px;
+    @media screen and (min-width: $desktop-width) {
+      margin-right: 93px;
+    }
   }
 
   footer & {

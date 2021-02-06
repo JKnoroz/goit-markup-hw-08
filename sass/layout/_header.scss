@@ -13,12 +13,18 @@ header {
     letter-spacing: 0.02em;
     color: inherit;
     display: block;
-    padding: 32px 0;
   }
 }
 
 .menu {
-  display: flex;
+  display: none;
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+  }
+
+  .link {
+    padding: 32px 0;
+  }
 
   &-item:not(:last-child) {
     margin-right: 50px;
@@ -30,8 +36,16 @@ header {
 }
 
 .contacts {
-  display: flex;
-  margin-left: auto;
+  display: none;
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+  @media screen and (min-width: $desktop-width) {
+    flex-direction: row;
+    margin-left: auto;
+  }
 
   a {
     font-size: $standart-font-size;
@@ -39,10 +53,17 @@ header {
     display: inline-flex;
     align-items: center;
   }
+  padding: 22px 0;
 }
 
 .contacts li + li {
-  margin-left: 50px;
+  @media screen and (max-width: 1199px) {
+    margin-top: 10px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    margin-left: 50px;
+  }
 }
 
 .contacts-icon {
