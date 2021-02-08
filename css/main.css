@@ -947,6 +947,19 @@ header .link {
   position: relative;
 }
 
+.burger-menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-left: auto;
+  width: 40px;
+  height: 40px;
+}
+
+.menu-icon {
+  fill: currentColor;
+}
+
 .contacts {
   display: none;
   padding: 22px 0;
