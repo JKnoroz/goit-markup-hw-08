@@ -4,3 +4,14 @@
   letter-spacing: 0.03em;
   margin-top: 0;
 }
+
+%flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+%flex-container-centered {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

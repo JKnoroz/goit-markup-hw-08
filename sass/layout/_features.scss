@@ -1,8 +1,29 @@
-.features .item {
-  width: calc((100% - 90px) / 4);
+.features-list {
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
+.features .item {
   &:not(:last-child) {
-    margin-right: $project-card-gap;
+    margin-bottom: $project-card-gap;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    width: calc((100% - #{$project-card-gap}) / 2);
+
+    &:nth-child(2n + 1) {
+      margin-right: $project-card-gap;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: calc((100% - 3 * #{$project-card-gap}) / 4);
+
+    &:not(:last-child) {
+      margin-right: $project-card-gap;
+    }
   }
 }
 
@@ -28,4 +49,9 @@
   font-weight: $bold-font-weight;
   text-transform: uppercase;
   margin-bottom: 10px;
+
+  text-align: center;
+  @media screen and (min-width: $tablet-width) {
+    text-align: left;
+  }
 }

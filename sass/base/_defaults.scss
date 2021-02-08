@@ -5,8 +5,13 @@ body {
 }
 
 section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $desktop-width) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container {
@@ -48,8 +53,12 @@ a {
 
 .section-title {
   font-weight: $bold-font-weight;
-  font-size: 36px;
   line-height: 1.17;
+
+  font-size: 28px;
+  @media screen and (min-width: $desktop-width) {
+    font-size: 36px;
+  }
 }
 
 h2 {

@@ -2,14 +2,37 @@
   background-color: #f5f4fa;
   text-align: center;
 
-  & .team-member:not(:last-child) {
-    margin-right: $project-card-gap;
+  .team-member:not(:last-child) {
+    @media screen and (min-width: $desktop-width) {
+      margin-right: $project-card-gap;
+    }
   }
 
-  & .team-member {
+  .team-member {
     background-color: $white-color;
     box-shadow: $card-box-shadow;
     border-radius: 0px 0px 4px 4px;
+
+    &:not(:last-child) {
+      margin-bottom: $project-card-gap;
+    }
+
+    @media screen and (min-width: $tablet-width) {
+      width: calc((100% - #{$project-card-gap}) / 2);
+
+      &:nth-child(2n + 1) {
+        margin-right: $project-card-gap;
+      }
+    }
+  }
+}
+
+.team-members {
+  display: block;
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 

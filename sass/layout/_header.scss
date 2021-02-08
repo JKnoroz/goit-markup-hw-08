@@ -1,6 +1,11 @@
 .main-nav {
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
 }
 
 header {
@@ -42,6 +47,10 @@ header {
   margin-left: auto;
   width: 40px;
   height: 40px;
+
+  @media screen and (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .menu-icon {
@@ -61,16 +70,25 @@ header {
   }
 
   a {
-    font-size: $standart-font-size;
-    line-height: 1;
+    @media screen and (min-width: $tablet-width) {
+      font-size: $tiny-font-size;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      font-size: $small-font-size;
+      line-height: 1.14;
+    }
+
     display: inline-flex;
     align-items: center;
   }
-  padding: 22px 0;
+  padding: 21px 0;
 }
 
 .contacts li + li {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     margin-top: 10px;
   }
 
@@ -82,6 +100,16 @@ header {
 .contacts-icon {
   margin-right: 10px;
   fill: currentColor;
+
+  @media screen and (min-width: $tablet-width) {
+    height: 14px;
+    width: 14px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    height: 16px;
+    width: 16px;
+  }
 }
 
 .contact {

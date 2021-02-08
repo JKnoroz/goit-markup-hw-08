@@ -1,13 +1,17 @@
-.wedo .item:not(:last-child) {
-  margin-right: $project-card-gap;
-}
-
 .wedo {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+
   padding-top: 0px;
 
   &-card {
     position: relative;
   }
+}
+
+.wedo .item:not(:last-child) {
+  margin-right: $project-card-gap;
 }
 
 .wedo-card img {
