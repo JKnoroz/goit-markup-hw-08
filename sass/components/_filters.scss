@@ -1,9 +1,27 @@
-.projects-filter {
-  margin-top: 0px;
-  margin-bottom: 50px;
+// .projects-filter {
+//   margin-top: 0px;
+//   margin-bottom: 50px;
 
-  & .item:not(:last-child) {
-    margin-right: 8px;
+//   & .item:not(:last-child) {
+//     margin-right: 8px;
+//   }
+// }
+
+.projects-filter {
+  @extend %flex-container;
+
+  margin-left: -8px;
+  margin-top: -15px;
+  padding-bottom: 40px;
+
+  .item {
+    margin-top: 15px;
+    margin-left: 8px;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    justify-content: center;
+    padding-bottom: 50px;
   }
 }
 

@@ -1,14 +1,23 @@
-.portfolio h1 {
-  display: none;
-}
-
 .projects {
   margin-left: calc((-1) * #{$project-card-gap});
   margin-top: calc((-1) * #{$project-card-gap});
+
+  display: block;
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .projects > .project {
-  flex-basis: calc(100% / 3-#{$project-card-gap});
   margin-left: $project-card-gap;
   margin-top: $project-card-gap;
+
+  @media screen and (min-width: $tablet-width) {
+    width: calc(100% / 2 - #{$project-card-gap});
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    width: calc(100% / 3 - #{$project-card-gap});
+  }
 }

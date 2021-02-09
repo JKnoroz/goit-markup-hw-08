@@ -4,9 +4,23 @@ footer {
 }
 
 .bottom {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  text-align: center;
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    text-align: left;
+    display: inline-flex;
+    justify-content: space-between;
+  }
+}
+
+.allcontacts {
+  flex-basis: calc(100%-30px);
 }
 
 address p {
@@ -26,6 +40,7 @@ address p {
   font-size: $small-font-size;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  flex-basis: 100%/2;
 }
 
 .subscribe p,
@@ -40,6 +55,18 @@ address p {
   display: block;
 }
 
+.subscribe {
+  flex-basis: 100%/2;
+}
+
 .footer-socials {
   display: inline-flex;
+}
+
+.footer-contacts,
+.subscribe {
+  margin-bottom: 60px;
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 0px;
+  }
 }
