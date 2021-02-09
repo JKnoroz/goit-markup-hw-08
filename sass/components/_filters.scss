@@ -1,12 +1,3 @@
-// .projects-filter {
-//   margin-top: 0px;
-//   margin-bottom: 50px;
-
-//   & .item:not(:last-child) {
-//     margin-right: 8px;
-//   }
-// }
-
 .projects-filter {
   @extend %flex-container;
 

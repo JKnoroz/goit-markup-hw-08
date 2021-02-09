@@ -14,13 +14,8 @@ footer {
 
   @media screen and (min-width: $desktop-width) {
     text-align: left;
-    display: inline-flex;
     justify-content: space-between;
   }
-}
-
-.allcontacts {
-  flex-basis: calc(100%-30px);
 }
 
 address p {
@@ -43,6 +38,12 @@ address p {
   flex-basis: 100%/2;
 }
 
+.sendmail {
+  @media screen and (min-width: $desktop-width) {
+    margin-left: $project-card-gap;
+  }
+}
+
 .subscribe p,
 .sendmail b {
   @extend %text;
@@ -56,7 +57,7 @@ address p {
 }
 
 .subscribe {
-  flex-basis: 100%/2;
+  display: block;
 }
 
 .footer-socials {

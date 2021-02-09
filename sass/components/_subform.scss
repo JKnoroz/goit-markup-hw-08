@@ -1,7 +1,7 @@
 .subform {
   @media screen and (min-width: $desktop-width) {
     display: inline-flex;
-    flex-basis: calc(100%-30px);
+    flex-wrap: nowrap;
   }
 }
 
@@ -18,7 +18,10 @@
 
   margin-bottom: 20px;
 
-  // margin-right: 12px;
+  @media screen and (min-width: $desktop-width) {
+    margin-right: 12px;
+    width: 358px;
+  }
 }
 
 .subform button {
