@@ -23,8 +23,6 @@
 }
 
 .modal {
-  min-width: 450px;
-
   background-color: $white-color;
   box-shadow: $card-box-shadow;
   border-radius: 4px;
@@ -35,9 +33,15 @@
 
   position: relative;
 
+  @media screen and (min-width: $mobile-width) {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media screen and (min-width: $tablet-width) {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
   }
@@ -45,6 +49,7 @@
   @media screen and (min-width: $desktop-width) {
     min-width: 528px;
     min-height: 581px;
+    top: 50%;
   }
 
   @include transit(transform);
