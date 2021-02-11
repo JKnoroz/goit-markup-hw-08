@@ -15,19 +15,13 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('/images/Header-mobile.jpg');
+    url('/images/hero.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
   text-align: center;
   background-color: #2f303a;
-}
-
-@media (min-resolution: 2dppx) {
-  .hero {
-    background-image: url('/images/Header-mobile2x.jpg');
-  }
 }
 
 h1 {
