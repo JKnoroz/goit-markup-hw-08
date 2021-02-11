@@ -1,11 +1,1 @@
-.menu .link,
-.contacts .link {
-  @include transit(color);
-}
 
-.menu .link:hover,
-.menu .link:focus,
-.contacts li :hover,
-.contacts li :focus {
-  color: $accent-color;
-}

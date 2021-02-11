@@ -9,6 +9,13 @@ header {
     letter-spacing: 0.02em;
     color: inherit;
     display: block;
+
+    @include transit(color);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 }
 
@@ -212,8 +219,10 @@ header {
 .contacts {
   display: flex;
   flex-direction: column-reverse;
+
   @media screen and (min-width: $tablet-width) {
     margin-left: auto;
+    flex-direction: column;
   }
   @media screen and (min-width: $desktop-width) {
     flex-direction: row;

@@ -114,7 +114,10 @@
         <ul class="flex-container">
           <li class="item">
             <div class="wedo-card">
-              <img src="./images/wedo1.jpg" alt="Набор текста на клавиатуре" width="370">
+              <img src="./images/wedo/wedo1.jpg" 
+              alt="Набор текста на клавиатуре" 
+              width="370"
+              srcset="/images/wedo/wedo1@2x.jpg 2x">
               <div class="wedo-description">
                 <p>Десктопные приложения</p>
               </div>
@@ -122,7 +125,10 @@
           </li>
           <li class="item">
             <div class="wedo-card">
-              <img src="./images/wedo2.jpg" alt="Просмотр экрана телефона на компьютере" width="370">
+              <img src="./images/wedo/wedo2.jpg" 
+                alt="Просмотр экрана телефона на компьютере" 
+                width="370"
+                srcset="/images/wedo/wedo2@2x.jpg 2x">
               <div class="wedo-description">
                 <p>Мобильные приложения</p>
               </div>
@@ -130,7 +136,10 @@
           </li>
           <li class="item">
             <div class="wedo-card">
-              <img src="./images/wedo3.jpg" alt="Палитра цветов на экране планшета" width="370">
+              <img src="./images/wedo/wedo3.jpg" 
+              alt="Палитра цветов на экране планшета" 
+              width="370"
+              srcset="/images/wedo/wedo3@2x.jpg 2x">
               <div class="wedo-description">
                 <p>Дизайнерские решения</p>
               </div>
@@ -145,7 +154,17 @@
         <h2 class="section-title">Наша команда</h2>
         <ul class="team-members">
           <li class="team-member">
-            <img src="./images/igor_demyanenko.jpg" alt="Мужчина в очках с бородой" width="270">
+
+            <picture>
+              <source srcset="./images/team/igor_demyanenko_m.jpg 1x, ./images/team/igor_demyanenko_m@2x.jpg 2x"
+                media="(max-width: $mobile-maxwidth)">
+              <source srcset="./images/team/igor_demyanenko_d.jpg 1x, ./images/team/igor_demyanenko_d@2x.jpg 2x"
+                media="(min-width: $desktop-width)">
+              <source srcset="./images/team/igor_demyanenko_t.jpg 1x, ./images/team/igor_demyanenko_t@2x.jpg 2x"
+                media="(min-width: $tablet-width)">
+            <img src="./images/team/igor_demyanenko_d.jpg" alt="Мужчина в очках с бородой">
+            </picture>
+
             <div class="card-description">
               <h3 class="team-member__name">Игорь Демьяненко</h3>
               <p class="team-member__position" lang="en">Product Designer</p>
