@@ -23,6 +23,7 @@
 .project-photo {
   position: relative;
   overflow: hidden;
+  z-index: -1;
 
   &::before {
     position: absolute;

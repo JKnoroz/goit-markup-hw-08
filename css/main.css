@@ -619,6 +619,7 @@ footer .logo {
 .project-photo {
   position: relative;
   overflow: hidden;
+  z-index: -1;
 }
 
 .project-photo::before {
