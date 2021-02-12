@@ -40,7 +40,10 @@
     flex-direction: row;
   }
 
-  a {
+  .link {
+    display: flex;
+    align-items: center;
+
     @media screen and (min-width: $tablet-width) {
       font-size: $tiny-font-size;
       line-height: 1.17;
@@ -51,9 +54,6 @@
       font-size: $small-font-size;
       line-height: 1.14;
     }
-
-    display: inline-flex;
-    align-items: center;
   }
   padding: 21px 0;
 }

@@ -102,14 +102,14 @@ header {
 .menu {
   @media screen and (min-width: $tablet-width) {
     display: flex;
-  }
 
-  .link {
-    padding: 32px 0;
-  }
+    .link {
+      padding: 32px 0;
+    }
 
-  &-item:not(:last-child) {
-    margin-right: 50px;
+    &-item:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 
   a {
@@ -142,7 +142,7 @@ header {
     margin-bottom: 32px;
   }
 
-  @media screen and (max-width: $mobile-maxwidth) {
+  @media screen and (max-width: 1199px) {
     margin-top: 10px;
   }
   @media screen and (min-width: $desktop-width) {
