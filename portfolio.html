@@ -74,8 +74,14 @@
                 <ul class="projects">
                     <li class="project">
                         <a href="#">
-                            <div class="project-photo"><img src="./images/technokryak.jpg"
-                                    alt="Фото сайта на экране ноутбука" width="370">
+                            <div class="project-photo">
+                                <picture>
+                                <source srcset="./images/portfolio/technokryak_m.jpg 1x, ./images/portfolio/technokryak_m@2x.jpg 2x" media="(max-width: 767px)">
+                                <source srcset="./images/portfolio/technokryak_d.jpg 1x, ./images/portfolio/technokryak_d@2x.jpg 2x" media="(min-width: 1200px)">
+                                <source srcset="./images/portfolio/technokryak_t.jpg 1x, ./images/portfolio/technokryak_t@2x.jpg 2x" media="(min-width: 768px)">
+                                <img src="./images/portfolio/technokryak_d.jpg"
+                                    alt="Фото сайта на экране ноутбука">
+                                </picture>
                                 <div class="about">
                                     <p>Технокряк это современная площадка распространения коронавируса. Компании
                                         используют эту платформу для цифрового
