@@ -1136,7 +1136,7 @@ header .link:hover, header .link:focus {
     bottom: 0;
     left: 0;
     right: 0;
-    min-height: 796px;
+    height: 796px;
     padding: 48px 40px;
     background-color: #ffffff;
   }
@@ -1747,7 +1747,7 @@ address p {
 @media screen and (min-width: 768px) {
   .modal {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
